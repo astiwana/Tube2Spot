@@ -1,0 +1,38 @@
+{
+    "name": "Tube2Spot",
+    "manifest_version": 3,
+    "description": "Spotube Lite is a straightforward Chrome extension that allows you to effortlessly add songs from YouTube to your Spotify playlists.",
+    "version": "0.1",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Tube2Spot"
+    },
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["content.js"]
+        },
+        {
+            "matches": ["*://*.youtube.com/?code*"],
+            "run_at": "document_start",
+            "js": ["libs/oauth/injection.js"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["libs/*/*"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
