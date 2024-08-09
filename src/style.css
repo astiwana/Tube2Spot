@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-size: 100%;
     color: white;
-    background-color: rgb(116, 168, 124);
+    background-color: rgb(24, 24, 24);
     width: 360px;
     font-family: 'Times', serif;
 }
@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    animation: zoomIn 1.5s;
+    animation: zoomIn 1s;
     margin-bottom: 0;
 }
 
@@ -39,7 +39,7 @@ h1 {
 #data > div > img {
     min-width: 5vw;
     width: 100%;
-    animation: zoomIn 1,5s;
+    animation: zoomIn 1s;
 }
   
 #data > div > p {
@@ -58,7 +58,7 @@ h1 {
     margin-top: 1em;
     display: flex;
     justify-content: center;
-    animation: zoomIn 1.5s;
+    animation: zoomIn 1s;
 }
 
 #song-name {
@@ -66,9 +66,9 @@ h1 {
     border-radius: 4px;
     border-bottom: inset;
     border-bottom-color: #AAA;
-    background-color: rgb(116, 168, 124);
+    background-color: rgb(24, 24, 24);
     font-family: 'Times', serif;
-    transition: 0.1s;
+    transition: 0.2s;
     width: 60%;
     text-align: center;
     color: #FFF;
@@ -87,7 +87,7 @@ h1 {
 }
 
 #confirmation p {
-    animation: jackInTheBox 0.5s;
+    animation: jackInTheBox 0.75s;
 }
 
 iframe {
@@ -109,7 +109,7 @@ iframe {
 #header {
     margin-top: 1em;
     margin-bottom: 0;
-    animation: zoomIn 1,5s;
+    animation: zoomIn 1s;
     text-align: center;
     font-size: 1em;
     font-family: 'Poppins', 'Times', sans-serif;
@@ -137,7 +137,12 @@ a p:hover {
     margin-top: 0px;
 }
 
+.green_text {
+    color: #1DB954;
+    font-weight: 700;
+}
+
 .red_text {
-    color: #dd2121;
+    color: #FF0000;
     font-weight: 700;
 }
