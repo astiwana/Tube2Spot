@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-size: 100%;
+    color: white;
+    background-color: rgb(116, 168, 124);
+    width: 360px;
+    font-family: 'Times', serif;
+}
+
+* {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    animation: zoomIn 1.5s;
+    margin-bottom: 0;
+}
+
+#data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0em .75em;
+}
+  
+#data > div {
+    flex: 1;
+    justify-content: center;
+    margin: .75em;
+    cursor: pointer;
+}
+  
+#data > div > img {
+    min-width: 5vw;
+    width: 100%;
+    animation: zoomIn 1,5s;
+}
+  
+#data > div > p {
+    font-size: .7em;
+    font-family: 'Times';
+    font-weight: 700;
+    letter-spacing: .25px;
+    margin: 0px;
+    width: 10.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#info {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    animation: zoomIn 1.5s;
+}
+
+#song-name {
+    border: none;
+    border-radius: 4px;
+    border-bottom: inset;
+    border-bottom-color: #AAA;
+    background-color: rgb(116, 168, 124);
+    font-family: 'Times', serif;
+    transition: 0.1s;
+    width: 60%;
+    text-align: center;
+    color: #FFF;
+}
+
+#song-name:read-only {
+    border-bottom-color: #555;
+    color: #888;
+    cursor: initial;
+}
+
+#confirmation {
+    font-family: 'Poppins';
+    display: none;
+    text-align: center;
+}
+
+#confirmation p {
+    animation: jackInTheBox 0.5s;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+    padding: 0.5em;
+}
+
+#footer {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+#nomore {
+    text-align: center;
+    font-size: 0.85em;
+}
+
+#header {
+    margin-top: 1em;
+    margin-bottom: 0;
+    animation: zoomIn 1,5s;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Poppins', 'Times', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    cursor: pointer;
+    animation: fadeIn 1s;
+    transition: all 0.1s ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover,
+a p:hover {
+    opacity: 0.8;
+}
+
+.notyf__toast {
+    box-shadow: none;
+}
+
+.notyf__toast--lower {
+    margin-top: 0px;
+}
+
+.red_text {
+    color: #dd2121;
+    font-weight: 700;
+}
