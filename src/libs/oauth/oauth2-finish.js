@@ -1,0 +1,2 @@
+// This script is executed after the OAuth2 authorization process to complete the flow and exchange the authorization code for the access token
+window.onload = window.oauth2.finish(window.location.href);
