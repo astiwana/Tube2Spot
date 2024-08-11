@@ -32,3 +32,6 @@ To contribute to this repository, feel free to make a pull request and I will tr
 4. Go to chrome://extensions and enable developer mode.
 5. Press "load unpacked" and select the src folder which should have the config.js that you created.
 6. The extension should be loaded and you can now start developing!
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
