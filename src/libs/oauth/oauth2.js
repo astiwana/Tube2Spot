@@ -29,11 +29,11 @@
         finish: function(url) {
 
             // Helper function to remove the active tab
-            async function removeTab() {
-                let queryOptions = { active: true, currentWindow: true };
-                let [tab] = await chrome.tabs.query(queryOptions);
-                chrome.tabs.remove(tab.id);
-            }
+            function removeTab() {
+                chrome.tabs.query({'active': true, 'currentWindow': true}, function (tabs) {
+                    chrome.tabs.remove(tabs[0].id);
+                });
+            };
 
             // Check for an error in the redirect URL
             if (url.match(/\?error=(.+)/)) {

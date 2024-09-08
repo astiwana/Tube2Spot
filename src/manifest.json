@@ -1,9 +1,10 @@
 {
     "name": "Tube2Spot",
-    "manifest_version": 3,
-    "description": "Tube2Spot is a straightforward Chrome extension that allows you to effortlessly add songs from YouTube to your Spotify playlists.",
-    "version": "0.1",
-    "action": {
+    "manifest_version": 2,
+    "description": "Tube2Spot is a straightforward Firefox extension that allows you to effortlessly add songs from YouTube to your Spotify playlists.",
+    "version": "0.2",
+    "page_action": {
+        "default_icon": "assets/icons/icon128.png",
         "default_popup": "popup.html",
         "default_title": "Tube2Spot"
     },
@@ -29,12 +30,8 @@
         }
     ],
     "background": {
-        "service_worker": "background.js"
+        "scripts": ["background.js"],
+        "persistent": false
     },
-    "web_accessible_resources": [
-        {
-            "resources": ["libs/*/*"],
-            "matches": ["<all_urls>"]
-        }
-    ]
+    "web_accessible_resources": ["libs/*/*"]
 }
