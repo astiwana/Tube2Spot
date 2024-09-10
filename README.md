@@ -7,7 +7,7 @@ If you like the extension, please feel free to star this repository.
 
 Here is a demo video of how the extension works:
 
-https://github.com/user-attachments/assets/418bb270-7b5d-4fd5-a1fa-9384c9f63704
+https://github.com/user-attachments/assets/ac722cc4-5eab-487e-a61d-a0c663c20602
 
 
 Here are some screenshots of the popup portion of the add-on where you can see your playlists and the song the add-on found:
